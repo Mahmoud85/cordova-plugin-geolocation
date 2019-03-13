@@ -81,15 +81,24 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <js-module src="www/geolocation.js" name="geolocation">
             <clobbers target="navigator.geolocation" />
         </js-module>
-
         <config-file target="config.xml" parent="/*">
                 <feature name="Geolocation">
                     <param name="ios-package" value="CDVLocation"/>
                 </feature>
         </config-file>
+       
         <header-file src="src/ios/CDVLocation.h" />
         <source-file src="src/ios/CDVLocation.m" />
         <framework src="CoreLocation.framework" />
+      <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist">
+            <string>The app use your location to find the nearest ATMs and Branches.</string>
+        </config-file>
+        <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" target="*-Info.plist">
+            <string>The app use your location to find the nearest ATMs and Branches.</string>
+        </config-file>
+        <config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist">
+            <string>The app use your location to find the nearest ATMs and Branches.</string>
+        </config-file>
 
     </platform>
 
