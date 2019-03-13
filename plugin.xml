@@ -91,13 +91,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/ios/CDVLocation.m" />
         <framework src="CoreLocation.framework" />
       
-       <config-file parent="NSLocationWhenInUseUsageDescription" target="AlRajhiBank-Info.plist">
+       <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist">
             <string>The app use your location to find the nearest ATMs and Branches.</string>
         </config-file>
-        <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" target="AlRajhiBank-Info.plist">
+        <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" target="*-Info.plist">
             <string>The app use your location to find the nearest ATMs and Branches.</string>
         </config-file>
-        <config-file parent="NSLocationAlwaysUsageDescription" target="AlRajhiBank-Info.plist">
+        <config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist">
             <string>The app use your location to find the nearest ATMs and Branches.</string>
         </config-file>
 
